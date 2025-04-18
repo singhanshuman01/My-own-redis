@@ -66,6 +66,8 @@ int main()
         if (connfd < 0)
             continue;
         do_something(connfd);
-        close(conn_fd);
+        close(connfd);
     }
+
+    return 0;
 }
